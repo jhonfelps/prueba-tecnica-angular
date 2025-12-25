@@ -1,1 +1,184 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+/* ===== RESET BÁSICO ===== */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* ===== FONDO GLOBAL ===== */
+body {
+  background-color: #0f0f0f; /* negro suave */
+  color: #ffffff;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+main {
+  min-height: calc(100vh - 128px); /* header + footer aprox */
+  background-color: #0f0f0f;
+}
+
+.mat-mdc-card {
+  background-color: #3e4a61 !important;
+  color: #ffffff !important;
+}
+
+/* Títulos dentro de la card */
+.mat-mdc-card h1,
+.mat-mdc-card h2,
+.mat-mdc-card h3,
+.mat-mdc-card h4,
+.mat-mdc-card h5,
+.mat-mdc-card h6 {
+  color: #ffffff !important;
+}
+
+/* Texto normal */
+.mat-mdc-card p,
+.mat-mdc-card span {
+  color: #ffffff !important;
+}
+
+/* Subtítulos Material */
+.mat-mdc-card .mat-mdc-card-subtitle {
+  color: #e0e0e0 !important;
+}
+
+.mat-mdc-paginator {
+  background-color: #0f0f0f !important;
+  color: #ffffff !important;
+}
+
+/* Texto del paginador */
+.mat-mdc-paginator,
+.mat-mdc-paginator-page-size-label,
+.mat-mdc-paginator-range-label {
+  color: #ffffff !important;
+}
+
+/* Select (page size) */
+.mat-mdc-paginator .mat-mdc-select-value {
+  color: #ffffff !important;
+}
+
+/* Iconos (flechas) */
+.mat-mdc-paginator .mat-mdc-icon-button {
+  color: #ffffff !important;
+}
+
+/* Iconos deshabilitados */
+.mat-mdc-paginator .mat-mdc-icon-button[disabled] {
+  color: #ffffff !important;
+}
+
+/* Fondo del select desplegable */
+.mat-mdc-select-panel {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+/* Opciones del select */
+.mat-mdc-option {
+  color: #ffffff !important;
+}
+
+.mat-mdc-option.mdc-list-item--selected {
+  background-color: #3e4a61 !important;
+}
+
+/* ===== PAGINATOR ICONS WHITE ===== */
+.mat-mdc-paginator .mat-mdc-icon-button {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* SVG interno (muy importante) */
+.mat-mdc-paginator .mat-mdc-icon-button svg {
+  fill: #ffffff !important;
+}
+
+/* Hover */
+.mat-mdc-paginator .mat-mdc-icon-button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Disabled */
+.mat-mdc-paginator .mat-mdc-icon-button[disabled] {
+  color: rgba(255, 255, 255, 0.5) !important;
+  fill: rgba(255, 255, 255, 0.5) !important;
+}
+
+.mat-mdc-paginator {
+  border-radius: 8px;
+}
+
+
+/* ===== PAGINATOR SELECT TEXT ===== */
+.mat-mdc-paginator .mat-mdc-select-value-text {
+  color: #ffffff !important;
+}
+
+/* Icono del select */
+.mat-mdc-paginator .mat-mdc-select-arrow {
+  color: #ffffff !important;
+}
+
+/* Opciones del dropdown */
+.mat-mdc-select-panel {
+  background-color: #1a1a1a !important;
+}
+
+.mat-mdc-option {
+  color: #ffffff !important;
+}
+
+/* Opción seleccionada */
+.mat-mdc-option.mdc-list-item--selected {
+  background-color: #3e4a61 !important;
+}
+
+.mdc-list-item__primary-text {
+    color:#ffffff !important;
+}
+
+/* Label */
+.mat-mdc-form-field-label {
+  color: #ffffff !important;
+}
+
+/* Texto escrito */
+.mat-mdc-input-element {
+  color: #ffffff !important;
+}
+
+/* Placeholder */
+.mat-mdc-input-element::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Borde outline */
+.mat-mdc-notched-outline {
+  border-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Borde en focus */
+.mat-mdc-form-field.mat-focused .mat-mdc-notched-outline {
+  border-color: #ffffff !important;
+}
+
+/* Label cuando está flotando */
+.mat-mdc-form-field.mat-focused .mat-mdc-floating-label {
+  color: #ffffff !important;
+}
+
+/* Caret (cursor) */
+.mat-mdc-input-element {
+  caret-color: #ffffff !important;
+}
+
+.mat-mdc-form-field-infix{
+    color: #ffffff !important;
+}

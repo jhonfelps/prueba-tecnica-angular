@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" class="toolbar">
+
+  <div class="logo">
+    <img src="assets/logopelis.png" alt="Logo" />
+    <span>Peliculas Prime</span>
+  </div>
+
+  <span class="spacer"></span>
+
+  <nav>
+    <a
+      mat-button
+      routerLink="/"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Home
+    </a>
+
+    <a
+      mat-button
+      routerLink="/movies"
+      routerLinkActive="active-link"
+    >
+      Estrenos
+    </a>
+  </nav>
+
+</mat-toolbar>

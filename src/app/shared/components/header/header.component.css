@@ -1,0 +1,45 @@
+.toolbar {
+  display: flex;
+  color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.active-link {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.mat-toolbar {
+  background: #000000;
+  color: #ffffff;
+}
+
+.active-link {
+  border-bottom: 2px solid #e50914;
+  color: #fff;
+}
+
+nav a {
+  color: white !important; /* El !important asegura que sobrescriba los estilos de Angular Material */
+  text-decoration: none;   /* Opcional: quita el subrayado */
+}
+
+/* Si quieres que cambie de color al pasar el mouse */
+nav a:hover {
+  color: #cccccc; 
+}

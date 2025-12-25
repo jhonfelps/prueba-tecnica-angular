@@ -1,0 +1,91 @@
+.container {
+  padding: 20px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 420px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0)
+  );
+  color: #fff;
+}
+
+/* FILTRO */
+.filter {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+/* GRID CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.movie-card {
+  transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+}
+
+mat-card img {
+  height: 280px;
+  object-fit: cover;
+}
+
+/* LOADING */
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.paginator-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star-icon {
+  color: #f5c518; /* amarillo tipo IMDb */
+  font-size: 18px;
+  line-height: 1;
+}

@@ -1,0 +1,67 @@
+<div class="container">
+
+  <!-- HERO SLIDER -->
+  <div class="hero" *ngIf="heroMovies.length">
+    <div
+      class="hero-slide"
+      *ngFor="let movie of heroMovies; let i = index"
+      [class.active]="i === currentSlide"
+      [style.backgroundImage]="'url(' + movie.backdrop + ')'"
+    >
+      <div class="overlay">
+        <h1>{{ movie.title }}</h1>
+        <p>{{ movie.overview }}</p>
+        <span>⭐ {{ movie.rating }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUSCADOR -->
+  <mat-form-field appearance="outline" class="filter">
+    <mat-label style="color: white;">Buscar película</mat-label>
+    <input
+      matInput
+      (keyup)="applyFilter($event)"
+      placeholder="Ej: Avatar"
+    />
+  </mat-form-field>
+
+  <!-- LOADING -->
+  <div class="spinner" *ngIf="loading">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <!-- GRID DE CARDS -->
+  <div class="grid" *ngIf="!loading">
+
+    <mat-card
+      *ngFor="let movie of pagedMovies"
+      class="movie-card"
+    >
+      <img
+        mat-card-image
+        *ngIf="movie.poster"
+        [src]="movie.poster"
+        alt="{{ movie.title }}"
+      />
+
+      <mat-card-content>
+        <h3>{{ movie.title }}</h3>
+        <p>Estreno: {{ movie.releaseDate | date }}</p>
+        <p>⭐ Rating: {{ movie.rating }}</p>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+  <!-- PAGINADOR -->
+  <div class="paginator-wrapper">
+    <mat-paginator
+      [length]="filteredMovies.length"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[8, 12, 16]"
+      (page)="onPageChange($event)">
+    </mat-paginator>
+  </div>
+
+</div>
